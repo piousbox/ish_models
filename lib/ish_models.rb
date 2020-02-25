@@ -31,6 +31,8 @@ require 'gameui/map.rb'
 require 'gameui/marker.rb'
 require 'gameui/premium_purchase.rb'
 
+require 'ish/campaign.rb'
+require 'ish/covered_call.rb'
 require 'ish/crawler.rb'
 require 'ish/gallery_name.rb'
 require 'ish/iron_condor.rb'
@@ -39,16 +41,11 @@ require 'ish/payment.rb'
 require 'ish/stock_action.rb'
 require 'ish/stock_option.rb'
 require 'ish/stock_watch.rb'
-# require 'ish/alphavantage_stockwatcher.rb'
 require 'ish/invoice.rb'
 require 'ish/lead.rb'
-require 'ish/campaign.rb'
 require 'ish/issue.rb'
 require 'ish/yahoo_stockwatcher.rb'
-
-# obsolete, use `ish` namespace now
-require 'ish_models/cache_key.rb' # this is really obsolete? _vp_ 20180123
-require 'ish_models/user_profile.rb'
+require 'ish/user_profile.rb'
 
 require 'app_model2.rb'
 require 'aux_model.rb'

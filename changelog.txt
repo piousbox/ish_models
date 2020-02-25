@@ -10,3 +10,4 @@
         let's do devise and multiengine config, finally
 0.0.11 - moving gallery data from app_model2 to galleries2 (and later will transition to Gallery)
 0.0.12 - let's nuke app_model2
+0.1.0  - 20200224 - let's cleanup everything in a major way. Deleting a bunch of files.

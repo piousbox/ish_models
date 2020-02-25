@@ -1,5 +1,5 @@
 
-class Ish::CoveredCall
+class ::Ish::CoveredCall
   include Mongoid::Document
   include Mongoid::Timestamps
 

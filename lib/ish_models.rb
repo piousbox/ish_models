@@ -1,56 +1,33 @@
 
-require 'ish_models/railtie' if defined?(Rails)
-require 'ish_models/configuration'
+module Ish; end
 
-::S3_CREDENTIALS ||= {}
+module IshModels; end
 
-module IshModels
-
-  class << self
-    attr_accessor :configuration
-  end
-
-  def self.configure
-    @configuration ||= Configuration.new
-  end
-
-  def self.setup
-    yield(configuration)
-  end
-end
+require 'aux_model'
 
 require 'co_tailors'
-require 'co_tailors/product.rb'
-require 'co_tailors/profile_measurement.rb'
+require 'co_tailors/address.rb'
 require 'co_tailors/order.rb'
 # require 'co_tailors/order_item.rb' # this is required from within order.rb
-require 'co_tailors/address.rb'
+require 'co_tailors/product.rb'
+require 'co_tailors/profile_measurement.rb'
 
 require 'gameui'
 require 'gameui/map.rb'
 require 'gameui/marker.rb'
 require 'gameui/premium_purchase.rb'
 
-require 'ish/campaign.rb'
 require 'ish/covered_call.rb'
-require 'ish/crawler.rb'
-require 'ish/gallery_name.rb'
+require 'ish/invoice.rb'
 require 'ish/iron_condor.rb'
 require 'ish/iron_condor_watcher.rb'
-require 'ish/payment.rb'
-require 'ish/stock_action.rb'
-require 'ish/stock_option.rb'
-require 'ish/stock_watch.rb'
-require 'ish/invoice.rb'
 require 'ish/lead.rb'
-require 'ish/issue.rb'
-require 'ish/yahoo_stockwatcher.rb'
+require 'ish/payment.rb'
+require 'ish/stock_watch.rb'
 require 'ish/user_profile.rb'
 
-require 'app_model2.rb'
-require 'aux_model.rb'
-require 'city.rb'
 require 'cities_user.rb'
+require 'city.rb'
 require 'country.rb'
 require 'event.rb'
 require 'feature.rb'
@@ -59,17 +36,9 @@ require 'gallery2.rb'
 require 'manager.rb'
 require 'newsitem.rb'
 require 'photo.rb'
-require 'public_item.rb'
 require 'report.rb'
 require 'site.rb'
 require 'tag.rb'
 require 'venue.rb'
 require 'video.rb'
-
-
-
-
-
-
-
 
